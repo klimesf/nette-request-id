@@ -1,0 +1,30 @@
+{
+    "name": "klimesf/nette-request-id",
+    "description": "Unique HTTP request id provider for Nette Framework.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Filip Klimes",
+            "email": "filip@filipklimes.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">= 5.5",
+        "nette/application": "^2.3",
+        "nette/di": "^2.3",
+        "ramsey/uuid": "^2.8"
+    },
+    "require-dev": {
+        "nette/tester": "^1.5",
+        "tracy/tracy": "^2.3",
+        "nette/bootstrap": "^2.3",
+        "nette/robot-loader": "^2.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "Klimesf\\NetteRequestId\\": "src/"
+        }
+    }
+}
