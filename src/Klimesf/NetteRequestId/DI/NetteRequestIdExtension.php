@@ -28,8 +28,7 @@ class NetteRequestIdExtension extends CompilerExtension
 			->setClass($config['generator']);
 
 		$container->addDefinition($this->prefix('provider'))
-			->setClass(Provider::class, ['@' . $this->prefix('generator')])
-			->addTag('kdyby.subscriber');
+			->setClass(Provider::class, ['@' . $this->prefix('generator')]);
 	}
 
 	public function afterCompile(Nette\PhpGenerator\ClassType $class)
