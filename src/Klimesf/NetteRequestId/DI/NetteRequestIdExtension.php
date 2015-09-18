@@ -34,9 +34,9 @@ class NetteRequestIdExtension extends CompilerExtension
 	public function afterCompile(Nette\PhpGenerator\ClassType $class)
 	{
 		$initialize = $class->methods['initialize'];
-		$initialize->addBody('$this->getService(?)->onRequest[] = function() {
+		$initialize->addBody('$this->getByType(?)->onRequest[] = function() {
 			$this->getService(?)->generateId();
-		};', ['nette.application.application', $this->prefix('provider')]);
+		};', [Nette\Application\Application::class, $this->prefix('provider')]);
 	}
 
 }
