@@ -7,7 +7,7 @@ Extension for Nette Framework which assigns a unique identifier to each HTTP req
 Requirements
 ------------
 
-Kdyby/Monolog requires PHP 5.5 or higher.
+Klimesf/NetteRequestId requires PHP 5.5 or higher.
 
 - [Nette Framework](https://github.com/nette/nette)
 - [Rhumsaa\UUID for PHP](https://github.com/ramsey/uuid)
@@ -28,14 +28,14 @@ Configuration
 
 Register the extension in your `config.neon`:
 
-```
+```yml
 extensions:
 	requestId: Klimesf\NetteRequestId\DI\NetteRequestIdExtension
 ```
 
 You can provide your own Request ID generator in the config file:
 
-```
+```yml
 requestId:
 	generator: My\Own\Generator
 ```
@@ -74,7 +74,7 @@ class MonologProcessor
 
 Then register the processor in Kdyby\Monolog configuration:
 
-```
+```yml
 monolog:
 	processors:
 		- My\Own\MonologProcessor
