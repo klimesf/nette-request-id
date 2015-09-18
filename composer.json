@@ -26,5 +26,8 @@
         "psr-0": {
             "Klimesf\\NetteRequestId\\": "src/"
         }
+    },
+    "suggest": {
+        "kdyby/monolog": "Adds advanced logging of your Nette application flow"
     }
 }
