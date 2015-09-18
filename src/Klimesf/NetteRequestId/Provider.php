@@ -28,6 +28,7 @@ class Provider
 
 	/**
 	 * Generates the Request ID via IGenerator.
+	 * @internal
 	 */
 	public function generateId()
 	{
