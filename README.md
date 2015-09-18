@@ -65,7 +65,7 @@ class MonologProcessor
 
 	public function __invoke(array $record)
 	{
-		$record['extras']['request_id'] = $this->provider->getRequestId();
+		$record['extra']['request_id'] = $this->provider->getRequestId();
 		return $record;
 	}
 
