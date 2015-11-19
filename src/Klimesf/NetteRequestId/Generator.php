@@ -3,7 +3,7 @@
 
 namespace Klimesf\NetteRequestId;
 
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 
 /**
  * Generates uuid1 Request ID.

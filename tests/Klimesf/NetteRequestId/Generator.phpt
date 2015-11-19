@@ -1,7 +1,7 @@
 <?php
 
 use Klimesf\NetteRequestId\Generator;
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 use Tester\Assert;
 
 require __DIR__ . '/../../bootstrap.php';
